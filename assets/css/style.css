@@ -1,0 +1,185 @@
+*{
+	font-family:helvetica;
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+
+h2{
+	font-size:50px;
+	font-weight:normal;
+}
+
+h4{
+    color: #6F6E6E;
+    border-bottom: 2px solid #FCDF00;
+}
+
+img{
+	max-width: 100%;
+}
+
+/*
+div{
+	background:rgba(200, 200, 200, .5);
+}
+*/
+
+/*nav*/
+header{
+	position:relative;
+}
+
+#logo{
+	padding:10px;
+	font-weight:normal;
+	text-transform: uppercase;
+    border-left: 2px solid #FCDF00;
+    
+}
+
+#mobilenav{
+	display:none;
+}
+
+nav{
+	position:absolute;
+	top:17px;
+	right: 40%;
+}
+
+nav ul{
+	list-style: none;
+}
+
+nav li{
+	display:inline-block;
+}
+
+li a.active {
+  border-bottom: 2px solid #FCDF00;
+  color: black;
+}
+
+nav a{
+    text-transform: uppercase;
+	padding:10px;
+	text-decoration: none;
+	color:#ccc;
+}
+
+nav a:hover{
+	color:#000;
+}
+
+
+
+/*columns*/
+.container{
+    padding-top: 40px;
+}
+.container, header{
+	max-width:1080px;
+	margin:0 auto;
+}
+
+.row:after{
+	content:'';
+	display:block;
+	clear:both;
+}
+
+.col{
+	float:left;
+	padding:30px;
+}
+
+.c75{
+	width:75%;
+}
+
+.c50{
+	width:50%;
+}
+
+.c25{
+	width:25%;
+    position: relative;
+}
+
+
+/*brand*/
+.hero{
+	margin: 0 auto;
+}
+
+.btn {
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+	margin-top: 60px;
+	padding: 10px 20px;
+	display: inline-block;
+	background: #FCDF00;
+	text-transform: uppercase;
+	border-radius: 50px;
+
+}
+
+.btn:hover {
+	color: white;
+}
+
+
+@media screen and (max-width:950px){
+	h2{
+		color:black;
+		font-size:20px;
+	}
+}
+
+@media screen and (max-width:575px){
+	.col{
+		float:none;
+		padding:10px;
+	}
+	.c50, .c25{
+		width:100%;
+	}
+	h2{
+		color:black;
+	}
+	
+	nav{
+		display: none;
+		position:static;
+	}
+    
+	nav li{
+		display:block;
+	}
+    
+	nav a{
+		width:100%;
+		display:block;
+		border:none;
+		color:#000;
+	}
+	
+	#mobilenav{
+		display:block;
+		position:absolute;
+		top:17px;
+		right:10px;
+	}
+	
+	#mobilenav a{
+		text-decoration: none;
+		color:#FCDF00;
+		padding:10px;
+		height: 200px;
+        font-size: 50px;
+	}
+	
+}
