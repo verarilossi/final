@@ -137,24 +137,6 @@ nav a:hover{
 	margin: 0 auto;
 }
 
-.btn {
-    color: black;
-    font-size: 14px;
-    font-weight: 600;
-    text-decoration: none;
-	margin-top: 60px;
-	padding: 10px 20px;
-	display: inline-block;
-	background: #FCDF00;
-	text-transform: uppercase;
-	border-radius: 50px;
-
-}
-
-.btn:hover {
-	color: white;
-}
-
 @media screen and (max-width:1024px){
     .ipad {
         display: none;
@@ -185,6 +167,7 @@ nav a:hover{
     h2.mobile, h4.mobile{
         display: none;
     }
+    
     
     .title h2, h3{
         text-transform: uppercase;
@@ -234,3 +217,4 @@ nav a:hover{
         display: block;
     }
 }
+
