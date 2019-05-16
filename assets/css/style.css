@@ -102,6 +102,7 @@ nav a:hover{
 
 
 /*columns*/
+
 .container, header{
 	max-width:1080px;
 	margin:0 auto;
@@ -133,8 +134,11 @@ nav a:hover{
 
 
 /*brand*/
-.hero{
-	margin: 0 auto;
+#hero{
+	height:100vh;
+	display:flex;
+	align-items: center;
+	justify-content:center;
 }
 
 @media screen and (max-width:1024px){
