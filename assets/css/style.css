@@ -1,5 +1,5 @@
 *{
-	font-family:helvetica;
+	font-family: 'Roboto', sans-serif;
 	box-sizing: border-box;
 	margin:0;
 	padding:0;
@@ -10,15 +10,42 @@ h2{
 	font-weight:normal;
 }
 
+h2.mobile {
+    border-bottom: 2px solid #FCDF00;
+}
 h4{
     color: #6F6E6E;
+}
+
+h5{
+    color: #6F6E6E
+}
+
+.title h2, h3 {
     border-bottom: 2px solid #FCDF00;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: #6F6E6E;
 }
 
 img{
 	max-width: 100%;
 }
 
+img.suzanne{
+    padding-top: 40px;
+}
+
+img.mobile{
+    display: none;
+}
 /*
 div{
 	background:rgba(200, 200, 200, .5);
@@ -75,9 +102,6 @@ nav a:hover{
 
 
 /*columns*/
-.container{
-    padding-top: 40px;
-}
 .container, header{
 	max-width:1080px;
 	margin:0 auto;
@@ -131,26 +155,41 @@ nav a:hover{
 	color: white;
 }
 
-
-@media screen and (max-width:950px){
-	h2{
-		color:black;
-		font-size:20px;
-	}
+@media screen and (max-width:1024px){
+    .ipad {
+        display: none;
+    }
 }
 
-@media screen and (max-width:575px){
+
+
+
+@media screen and (max-width:768px){
+    
+    .container{
+        padding-top: 0px;
+    }
+    
 	.col{
 		float:none;
-		padding:10px;
+		padding:20px;
 	}
 	.c50, .c25{
 		width:100%;
 	}
 	h2{
 		color:black;
+        font-weight: 600;
 	}
 	
+    h2.mobile, h4.mobile{
+        display: none;
+    }
+    
+    .title h2, h3{
+        text-transform: uppercase;
+    }
+    
 	nav{
 		display: none;
 		position:static;
@@ -181,5 +220,17 @@ nav a:hover{
 		height: 200px;
         font-size: 50px;
 	}
+    
+    img.mobile{
+        display: block;
+        padding-bottom: 20px;
+    }
+    
+    img.suzanne{
+        display: none;
+    }
 	
+    .ipad{
+        display: block;
+    }
 }
